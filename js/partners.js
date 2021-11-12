@@ -31,7 +31,7 @@ const renderItems = (data) => {
     a.addEventListener("click", (e) => {
       e.preventDefault();
       localStorage.setItem("restaurant", JSON.stringify(oneRestaurant));
-      window.location.href = "delivery_food-new/restaurant.html";
+      window.location.href = "restaurant.html";
     });
   });
 };
