@@ -6,6 +6,7 @@
   const close = modalCart.querySelector(".close");
   const buttonSend = modalCart.querySelector(".button-primary");
   let modalPricetag = document.querySelector(".modal-pricetag");
+  const cancel = document.querySelector(".clear-cart");
 
   const resetCart = () => {
     modalBody.innerHTML = "";
@@ -91,6 +92,9 @@
     modalCart.classList.add("is-open");
   });
   close.addEventListener("click", (e) => {
+    modalCart.classList.remove("is-open");
+  });
+  cancel.addEventListener("click", (e) => {
     modalCart.classList.remove("is-open");
   });
 
